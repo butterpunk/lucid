@@ -1,0 +1,28 @@
+body{
+    margin-top: 150px;
+}
+p{
+    margin-bottom: 1px;
+}
+h5{
+    font-weight: 400;
+}
+.btn {
+    border-radius: 1px;
+    margin-top: 25px;
+}
+.btn-primary {
+    background-color: #1E6FDD;
+}
+input[type=radio] {
+    margin-right: 5px;
+}
+input[type=text] {
+    display: block;
+}
+labe{
+    margin-bottom: 0px;
+}
+.bold{
+    font-weight: bold;
+}
