@@ -36,8 +36,6 @@ import Text from './sub-components/text.js';
                 return null;
         }
     }
-
-    //TODO - rename currentQuestion
     return(
         <Container>
             <Row className="justify-content-md-center">

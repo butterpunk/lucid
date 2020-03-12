@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Text = (props) => {
-    let { updateAnswer } = props; 
+    let { updateAnswer } = props;
+    let [textValue, setTextValue] = useState('');
+
+    const handleChange = (val) => {
+        setTextValue(val);
+        updateAnswer(val);
+    }
     return(
         <>
             <input 
-                onChange={(e)=>updateAnswer(e.target.value)} 
+                onChange={(e)=>handleChange(e.target.value)} 
                 type="text" 
                 id="name" 
-                name="name" 
-                required minlength="4" 
-                maxlength="20" 
                 size="20"
+                value={textValue}
             >
             </input>
        </>

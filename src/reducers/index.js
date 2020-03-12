@@ -5,6 +5,7 @@ import { getRandom } from '../utils/helpers.js'
 
 export default combineReducers({ questions, quiz });
 
+//SELECTORS///
 export const getNextItem = (state) => {
     //Depending on where we are in the game determines your next Item
     if(state.quiz.total_answered >= state.quiz.total_length){
